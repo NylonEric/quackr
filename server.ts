@@ -12,7 +12,7 @@ if (environment === 'development') {
   
     // Reload started, start web server
     server.listen(app.get('port'), function () {
-      console.log(`${appName} launched on http://localhost:${app.get('port')}\nmode: ${environment}\ndebug: ${debug_mode}`);
+      console.log(`${appName} launched with Reload on http://localhost:${app.get('port')}\nmode: ${environment}\ndebug: ${debug_mode}`);
     });
   }).catch(function (err) {
     console.error('Reload could not start, could not start server/sample app', err);

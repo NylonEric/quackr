@@ -4,7 +4,7 @@
   "description": "social media platform for waterfowl",
   "main": "server.ts",
   "scripts": {
-    "start": "cross-env NODE_ENV=development DEBUG_MODE='' nodemon --watch server.ts --watch lib --watch app.ts --watch db --watch src --watch routes",
+    "start": "cross-env NODE_ENV=development DEBUG_MODE='' nodemon --watch server.ts --watch lib --watch app.ts --watch db --watch src --watch routes --watch dist",
     "test": "cross-env NODE_ENV=test DEBUG_MODE='' jest --runInBand --watchAll --detectOpenHandles",
     "testonce": "cross-env NODE_ENV=test jest",
     "build-dev": "webpack --mode development --watch",
