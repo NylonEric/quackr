@@ -1,18 +1,18 @@
 require('dotenv').config();
 const express = require('express');
 const path = require('path');
-const app = express();
+export const app = express();
 const port = process.env.PORT || 2999;
-const router = require('./lib/router');
+// const router = require('./routes/router');
 
 app.set('port', port);
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(express.static(path.join(__dirname, "dist")));
-app.use(router);
+// app.use(router);
 
 const http = require('http');
-const server = http.createServer(app);
+export const server = http.createServer(app);
 const { Server } = require("socket.io");
 const io = new Server(server,  {
   cors: {
@@ -22,8 +22,3 @@ const io = new Server(server,  {
     credentials: true,
   },
 });
-
-module.exports = {
-  server,
-  app,
-};

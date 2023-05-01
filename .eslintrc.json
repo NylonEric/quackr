@@ -1,0 +1,83 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true,
+    "jest/globals": true,
+    "node": true
+  },
+  "extends": ["eslint:recommended", "plugin:react/recommended"],
+  "parser": "@babel/eslint-parser",
+  "parserOptions": {
+    "allowImportExportEverywhere": false,
+    "ecmaFeatures": {
+      "globalReturn": false,
+      "jsx": true
+    },
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "plugins": ["jest", "react"],
+  "rules": {
+    "comma-dangle": [
+      "error",
+      {
+        "arrays": "always-multiline",
+        "objects": "always-multiline",
+        "imports": "always-multiline",
+        "exports": "always-multiline",
+        "functions": "never"
+      }
+    ],
+    "curly": "error",
+    "eqeqeq": "error",
+    "indent": ["error", 2, { "MemberExpression": "off", "SwitchCase": 1 }],
+    "jsx-quotes": ["error", "prefer-double"],
+    "no-return-await": "error",
+    "no-unneeded-ternary": "error",
+    "no-unused-vars": ["error", { "varsIgnorePattern": "^_$" }],
+    "no-useless-return": "error",
+    "no-var": "error",
+    "object-curly-spacing": ["error", "always"],
+    "prefer-const": "error",
+    "semi": ["error", "always"],
+    // React
+    "react/button-has-type": "error",
+    "react/destructuring-assignment": "error",
+    "react/function-component-definition": [
+      2,
+      { "namedComponents": "arrow-function" }
+    ],
+    "react/jsx-boolean-value": "error",
+    "react/jsx-closing-bracket-location": "error",
+    "react/jsx-closing-tag-location": "error",
+    "react/jsx-curly-brace-presence": ["error", "never"],
+    "react/jsx-curly-newline": "error",
+    "react/jsx-curly-spacing": ["error", { "when": "always" }],
+    "react/jsx-equals-spacing": "error",
+    "react/jsx-fragments": ["error", "element"],
+    "react/jsx-indent": ["error", 2],
+    "react/jsx-max-props-per-line": ["error", { "maximum": 3 }],
+    "react/jsx-no-useless-fragment": "error",
+    "react/jsx-one-expression-per-line": ["error", { "allow": "single-child" }],
+    "react/jsx-pascal-case": [
+      "error",
+      { "allowLeadingUnderscore": true, "ignore": ["_404"] }
+    ],
+    "react/jsx-props-no-multi-spaces": "error",
+    "react/jsx-tag-spacing": [
+      "error",
+      {
+        "closingSlash": "never",
+        "beforeSelfClosing": "always",
+        "afterOpening": "never",
+        "beforeClosing": "never"
+      }
+    ],
+    "react/jsx-wrap-multilines": "error",
+    "react/no-danger": "error",
+    "react/no-this-in-sfc": "error",
+    "react/no-typos": "error",
+    "react/no-unstable-nested-components": "error",
+    "react/void-dom-elements-no-children": "error"
+  }
+}
