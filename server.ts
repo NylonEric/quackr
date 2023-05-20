@@ -1,5 +1,5 @@
 require('dotenv').config();
-import { server, app } from './app.ts';
+import { server, app } from './app';
 const environment = process.env.NODE_ENV;
 const debug_mode = !!process.env.DEBUG_MODE;
 const reload = require('reload');

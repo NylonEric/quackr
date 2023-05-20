@@ -4,6 +4,10 @@
 # packagelock
 package-lock.json
 
+# build files
+server.js
+app.js
+
 # Logs
 logs
 *.log
