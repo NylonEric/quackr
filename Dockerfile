@@ -2,6 +2,7 @@
 
 FROM node:16-alpine
 ENV NODE_ENV=production
+ENV PORT=80
 
 WORKDIR /app
 
@@ -19,6 +20,6 @@ RUN npm install typescript ts-loader
 # Build TypeScript code
 RUN ./node_modules/.bin/tsc server.ts
 
-EXPOSE 3000
+EXPOSE 80
 
 CMD ["npm", "run", "start-prod"]
