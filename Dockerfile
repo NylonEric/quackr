@@ -19,6 +19,8 @@ RUN npm install typescript ts-loader
 # Build TypeScript code
 RUN ./node_modules/.bin/tsc server.ts
 
+RUN npm run build:ci
+
 ENV PORT=80
 
 EXPOSE 80
