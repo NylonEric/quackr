@@ -19,8 +19,8 @@ RUN npm install typescript ts-loader
 # Build TypeScript code
 RUN ./node_modules/.bin/tsc server.ts
 
-ENV PORT=8080
+ENV PORT=80
 
-EXPOSE 8080
+EXPOSE 80
 
 CMD ["npm", "run", "start-prod"]
