@@ -1,0 +1,12 @@
+body {
+  height: 100vh;
+  background-color: #111;
+  color:rgb(0, 76, 255)
+}
+
+#app {
+  display: grid;
+  /* grid-template-columns: 0.2fr 0.8fr; */ */
+  /* grid-template-rows: auto; */
+  /* grid-template-areas: "header header" "sidebar main"; */
+}
