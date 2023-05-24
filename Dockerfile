@@ -21,8 +21,8 @@ RUN ./node_modules/.bin/tsc server.ts
 
 RUN npm run build:ci
 
-ENV PORT=80
+ENV PORT=8080
 
-EXPOSE 80
+EXPOSE 8080
 
 CMD ["npm", "run", "start-prod"]
