@@ -10,7 +10,7 @@
     "build-dev": "webpack --mode development --watch",
     "build-prod": "webpack --mode production --watch",
     "test:ci": "cross-env NODE_ENV=test jest --runInBand --env=jsdom --detectOpenHandles",
-    "build:ci": "npx webpack build --mode production",
+    "build:ci": "npx webpack-cli build --mode production",
     "start-prod": "cross-env NODE_ENV=production node server.js"
   },
   "repository": {
