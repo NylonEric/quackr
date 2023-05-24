@@ -29,8 +29,8 @@ RUN npm run build:ci
 
 RUN ls /app
 
-ENV PORT=8080
+ENV PORT=80
 
-EXPOSE 8080
+EXPOSE 80
 
 CMD ["npm", "run", "start-prod"]
