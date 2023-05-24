@@ -1,6 +1,10 @@
 # Mac stuff:
 .DS_Store
 
+# dist build:
+main.js
+main.js.*
+
 # packagelock
 package-lock.json
 
@@ -99,10 +103,10 @@ out
 
 # Nuxt.js build / generate output
 .nuxt
-dist
 
 #ts build
 build
+
 # Gatsby files
 .cache/
 # Comment in the public line in if your project uses Gatsby and not Next.js
